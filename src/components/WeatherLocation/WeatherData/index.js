@@ -1,16 +1,15 @@
 import React from 'react';
 import WeatherExtraInfo from './WeatherExtraInfo';
 import WeatherTemperature from './WeatherTemperature';
-import { RAIN } from './../../../constants/weathers';
 import './styles.css';
 
-const WeatherData = () => (
+const WeatherData = ({ data: { temperature, weatherState, humidity, wind } }) => (
     <div className="weather-data-cont">
         <WeatherTemperature
-            temperature={20}
-            weatherState={RAIN}>    
+            temperature={temperature}
+            weatherState={weatherState}>    
         </WeatherTemperature>
-        <WeatherExtraInfo humidity={80} wind={'10 m/s'}></WeatherExtraInfo>
+        <WeatherExtraInfo humidity={humidity} wind={wind}></WeatherExtraInfo>
     </div>
 );
 
