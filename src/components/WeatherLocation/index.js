@@ -11,13 +11,6 @@ const data = {
     wind: '10 m/s',
 }
 
-const data2 = {
-    temperature: 85,
-    weatherState: WINDY,
-    humidity: 10,
-    wind: '10 m/s',
-}
-
 class WeatherLocation extends Component {
     constructor() {
         super();
