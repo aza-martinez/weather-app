@@ -1,5 +1,5 @@
 .weather-data-cont { 
-    width: 500px;
+    width: 100%;
     height: 150px;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
@@ -32,4 +32,28 @@
     font-weight: bold;
     color: #666;
     vertical-align: top;
+}
+
+
+.weather-temperature-cont{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 320px) { 
+    .weather-data-cont  {
+        flex-direction: column;
+        width: 95%;
+        height: 100%;
+        padding: 10px 0;
+    }
+
+    .weather-temperature-cont {
+        flex-direction: row;
+        display: flex;
+    }
+
+    
+
 }

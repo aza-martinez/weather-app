@@ -1,1 +1,4 @@
-.weather-location { font-family: "Roboto", sans-serif; }
+.weather-location-title h1{ 
+    font-size: 1.6em;
+    color: #636e72;
+}
