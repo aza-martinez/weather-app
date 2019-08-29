@@ -5,9 +5,17 @@
    padding: 10px;
 }
 
+.forecast-title {
+   color: black;
+   text-align: center;
+   padding: 15px 0;
+}
+
+
 
 @media (max-width: 320px) {
    .location-list {
       max-height: 50vh;
    }
 }
+
