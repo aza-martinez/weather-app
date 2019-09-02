@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/1ef8afed-8f47-431f-9c0c-1b7634621e3b/resourceGroups/AHURUS/providers/Microsoft.Web/sites/testahurus",
+    "appService.deploySubpath": ""
+}
