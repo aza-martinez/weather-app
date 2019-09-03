@@ -38,7 +38,6 @@ class ForecastExtended extends Component {
         }
     }
     
-
     updateCity = city => {
         const url_forecast = `${URL_BASE_WEATHER}?q=${city}&appid=${API_KEY}`;
         API.get(url_forecast)

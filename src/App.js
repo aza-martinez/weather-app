@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
 import LocationListContainer from './containers/LocationListContainer';
-import ForecastExtended from './components/ForecastExtended';
+import ForecastExtendedContainer from './containers/ForecastExtendedContainer';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import './App.css';
@@ -16,13 +16,7 @@ const cities = [
 
 class App extends Component {
 
-  constructor() {
-    super();
-    this.state = { city: null };
-  }
-
   render() {
-    const { city } = this.state;
     return (
       <div className="App">
         <Grid fluid>
@@ -38,9 +32,7 @@ class App extends Component {
             <Col xs={12} md={8}>
               <Paper elevation={4}>
                 <div className="detail">
-                  {
-                    city && <ForecastExtended city={city}></ForecastExtended>
-                  }
+                    <ForecastExtendedContainer></ForecastExtendedContainer>
                 </div>
               </Paper>
             </Col>            
@@ -49,6 +41,7 @@ class App extends Component {
       </div>
     );    
   }
+  
 }
 
 export default App;

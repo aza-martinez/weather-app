@@ -8,7 +8,7 @@ class LocationListContainer extends Component {
   
     handleSelectionLocation = city => {
         this.props.setCity(city);
-      }
+    }
 
     render() {
         return (
@@ -16,7 +16,7 @@ class LocationListContainer extends Component {
                 className="location-list"
                 cities={this.props.cities}
                 onSelectedLocation={this.handleSelectionLocation}>
-          </LocationList>
+            </LocationList>
         );
     }
 }
